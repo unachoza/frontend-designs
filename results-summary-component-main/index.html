@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="component">
+      <div class="section" id="result">
+        <div class="title">Your Result</div>
+        <div class="content" id="circle">
+          <span style="font-size: 76px; color: white">76</span>of 100
+        </div>
+        <div class="content">Great</div>
+        <div class="note">
+          You scored higher than 65% of the people who have taken these tests.
+        </div>
+      </div>
+      <div class="section" id="summary">
+        <div class="title" id="summary">Summary</div>
+        <ul>
+          <li>
+            <div class="grid-container">
+              <div class="icon"><img src="assets/images/icon-reaction.svg" alt="icon" /></div>
+              <div class="category">Reaction</div>
+              <div class="score">80</div>
+              <div class="total-score">/100</div>
+            </div>
+          </li>
+          <li>
+            <div class="grid-container">
+              <div class="icon"><img src="assets/images/icon-memory.svg" alt="icon" /></div>
+              <div class="category">Memory</div>
+              <div class="score">92</div>
+              <div class="total-score">/100</div>
+            </li>
+          </li>
+            <li>
+              <div class="grid-container">
+                <div class="icon"><img src="assets/images/icon-verbal.svg" alt="icon" /></div>
+                <div class="category">Verbal</div>
+                <div class="score">73</div>
+                <div class="total-score">/100</div>
+              </div>
+            </li>
+            <li>
+              <div class="grid-container">
+                <div class="icon"><img src="assets/images/icon-visual.svg" alt="icon" /></div>
+                <div class="category">Visual</div>
+                <div class="score">61</div>
+                <div class="total-score">/100</div>
+  
+              </div>
+            </li>
+          </li>
+          <button>Continue</button>
+        </ul>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Arianna Choza</a>.
+    </div> -->
+  </body>
+</html>
