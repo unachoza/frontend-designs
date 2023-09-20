@@ -31,7 +31,7 @@ Users should be able to:
 ![](/results-summary-component-main/design/mobile-design.jpg)
 #### My Result
 ![](./desktop-screenshot.png)
-![](./mobile-screenshot.png)
+<img src="./mobile-screenshot.png" width="400">
 
 
 ### Links
