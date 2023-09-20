@@ -1,7 +1,12 @@
-html {
-  width: 100%;
-  height: 100%;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html{
   font-family: "Hanken Grotesk", sans-serif;
+
 }
 
 body {
@@ -25,14 +30,14 @@ body {
     width: 100%;
   }
   #summary {
-    width: 80%;
+    width: 100%;
+    padding: 5%;
   }
   li {
     width: 100%;
   }
   .component {
     flex-direction: column;
-    overflow: hidden;
   }
   .section {
     display: flex;
@@ -51,7 +56,6 @@ body {
   width: 50%;
   position: relative;
   text-align: center;
-  padding: 20px;
 }
 
 #result {
