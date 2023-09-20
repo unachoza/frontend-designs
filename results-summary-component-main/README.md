@@ -29,8 +29,8 @@ Users should be able to:
 ![](/results-summary-component-main/design/desktop-design.jpg)
 ![](/results-summary-component-main/design/mobile-design.jpg)
 #### My Result
-![](/results-summary-component-main/design/solition-desktop-screenshot.jpg)
-<img src="/results-summary-component-main/design/solition-mobile-screenshot.jpg" width="400">
+![](/results-summary-component-main/design/solution-desktop-screenshot.png)
+<img src="/results-summary-component-main/design/solution-mobile-screenshot.png" width="400">
 
 
 ### Links
