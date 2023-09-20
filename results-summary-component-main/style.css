@@ -4,53 +4,39 @@
 *::after {
   box-sizing: border-box;
 }
-html{
-  font-family: "Hanken Grotesk", sans-serif;
 
+html {
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 body {
   position: absolute;
-  top: 20%;
-  left: 20%;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
   display: flex;
   border-radius: 30px;
   box-shadow: 0 3px 6px hsl(252, 100%, 90%);
 }
+
 @media (max-width: 600px) {
   body {
-    position: initial;
     margin: 0;
     padding: 0;
-  }
-  .category {
-    margin-left: 0px !important;
-  }
-  #result {
-    width: 100%;
-  }
-  #summary {
-    width: 100%;
-  }
-  li {
-    width: 100%;
-  }
-  .component {
-    flex-direction: column;
-  }
-  .section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 50;
+  }
+
+  .category {
+    margin-left: 0px !important;
+  }
+
+  li, #result, #summary  {
+    width: 100%;
   }
 }
-.component {
-  background-color: white;
-  border-radius: 30px;
-  z-index: -1;
-  display: flex;
-}
+
 .section {
   width: 50%;
   position: relative;
@@ -96,17 +82,16 @@ div .content {
   font-size: 20px;
   margin: 20px;
 }
+
 #summary {
   background-color: #ffffff;
   border-radius: 0 30px 30px 0px;
   color: hsl(224, 30%, 27%);
 }
-.title#summary {
+.summary-title {
   display: flex;
-}
-
-.attribution {
-  display: block;
+  font-size: 25px;
+  margin: 20px 15px;
 }
 
 ul {
@@ -116,6 +101,7 @@ ul {
 li {
   display: flex;
   justify-content: space-between;
+  text-align: center;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
@@ -123,6 +109,7 @@ li {
   font-weight: 500;
   padding: 15px;
 }
+
 li #text {
   display: flex;
   align-items: flex-start;
@@ -146,13 +133,6 @@ li:nth-child(4) {
   color: hsl(234, 85%, 45%);
   background-color: hsl(234, 85%, 45%, 0.1);
 }
-li span {
-  color: black;
-  flex-basis: 300px;
-}
-li span span {
-  color: grey;
-}
 
 button {
   background-color: hsl(224, 30%, 27%);
@@ -167,34 +147,26 @@ button {
 
 button:hover {
   cursor: pointer;
-  color: black;
   background: linear-gradient(180deg, #3d31ee 0%, #2f2ce9 100%);
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+.status {
+  display: flex;
+  text-align: center;
   width: 100%;
 }
-.grid-container > div {
-  text-align: center;
-}
+
 .icon {
-  grid-column: 1;
-  margin-left: -10px;
+ margin-right: 10px;
 }
-.category {
-  grid-column: 2 / 3;
-  margin-left: -30px;
-}
+
 .score {
-  grid-column: 6;
   display: flex;
+  flex-grow: .9;
   justify-content: flex-end;
   color: black;
 }
 .total-score {
-  grid-column: 7;
   display: flex;
   justify-content: flex-start;
   color: grey;

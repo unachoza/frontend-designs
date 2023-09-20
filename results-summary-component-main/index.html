@@ -23,20 +23,8 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Results summary component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <div class="component">
       <div class="section" id="result">
         <div class="title">Your Result</div>
         <div class="content" id="circle">
@@ -48,10 +36,10 @@
         </div>
       </div>
       <div class="section" id="summary">
-        <div class="title" id="summary">Summary</div>
+        <div class="summary-title">Summary</div>
         <ul>
           <li>
-            <div class="grid-container">
+            <div class="status">
               <div class="icon"><img src="assets/images/icon-reaction.svg" alt="icon" /></div>
               <div class="category">Reaction</div>
               <div class="score">80</div>
@@ -59,7 +47,7 @@
             </div>
           </li>
           <li>
-            <div class="grid-container">
+            <div class="status">
               <div class="icon"><img src="assets/images/icon-memory.svg" alt="icon" /></div>
               <div class="category">Memory</div>
               <div class="score">92</div>
@@ -67,7 +55,7 @@
             </li>
           </li>
             <li>
-              <div class="grid-container">
+              <div class="status">
                 <div class="icon"><img src="assets/images/icon-verbal.svg" alt="icon" /></div>
                 <div class="category">Verbal</div>
                 <div class="score">73</div>
@@ -75,25 +63,15 @@
               </div>
             </li>
             <li>
-              <div class="grid-container">
+              <div class="status">
                 <div class="icon"><img src="assets/images/icon-visual.svg" alt="icon" /></div>
                 <div class="category">Visual</div>
                 <div class="score">61</div>
                 <div class="total-score">/100</div>
-  
               </div>
             </li>
-          </li>
+          </ul>
           <button>Continue</button>
-        </ul>
       </div>
-    </div>
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Arianna Choza</a>.
-    </div> -->
   </body>
 </html>
