@@ -33,10 +33,8 @@ Users should be able to:
 <img src="/results-summary-component-main/design/solution-mobile-screenshot.png" width="400">
 
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+### Links 
+- Live Site:  [frontend-designs-pi.verce.app/](https://frontend-designs-pi.vercel.app/)
 
 ## My process
 
