@@ -18,7 +18,7 @@
     <title>Interactive rating component</title>
   </head>
   <body>
-    <section class=="rating-card">
+    <section class="rating-card">
       <circle>
       <img src="images/icon-star.svg" class="icon" alt="star" />
     </circle>
@@ -28,25 +28,28 @@
         appreciated to help us improve our offering!
       </div>
       <div class="ratings-container">
-          <circle>1</circle>
-          <circle>2</circle>
-          <circle>3</circle>
-          <circle>4</circle>
-          <circle>5</circle>
+          <div class="rating-value">1</div>
+          <div class="rating-value">2</div>
+          <div class="rating-value">3</div>
+          <div class="rating-value">4</div>
+          <div class="rating-value">5</div>
       </div>
       <button id="submit-button">Submit</button>
     </section>
 
     <section class="thank-you-card">
         <img src="images/illustration-thank-you.svg" class="image"alt="reciept print out" />
-      You selected
-      <!-- Add rating here -->
-      out of 5
+     <div class="user-selection">
+       You selected
+       <span id="selected-value"></span>
+        out of 5
+     </div> 
       <div class="title">Thank you!</div>
       <div class="details">
       We appreciate you taking the time to give a rating. If you ever need more
       support, don’t hesitate to get in touch!
     </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

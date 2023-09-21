@@ -10,6 +10,10 @@ body {
 }
 
 section {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -34,7 +38,7 @@ section {
     hsl(220, 25%, 14%) 100%
   );
 }
-circle {
+.rating-value {
   border: solid white;
   display: flex;
   justify-content: center;
@@ -49,7 +53,6 @@ circle {
   );
 }
 .image {
-  width: 25%;
   margin: 0 auto;
 }
 .title {
@@ -69,17 +72,19 @@ circle {
 li {
   margin: 0px 15px;
 }
-circle:hover {
-  color: white;
-  background: hsl(25, 97%, 53%);
-  cursor: pointer;
-}
-circle:active {
+.rating-value:hover {
   color: white;
   background: grey;
+  cursor: pointer;
 }
-.thank-you {
+.rating-value:active {
+  color: white;
+  background: hsl(25, 97%, 53%);
+}
+.thank-you-card {
   text-align: center;
+  visibility: hidden;
+  /* display: none; */
 }
 button {
   color: white;
@@ -102,6 +107,27 @@ button:hover {
     background-color: hsl(216, 12%, 54%);
   }
   section {
-    width: 90vw;
+    width: 70vw;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
   }
+}
+
+.hide {
+  display: none;
+}
+.show {
+  visibility: visible;
+}
+.active {
+  color: white;
+  background: hsl(25, 97%, 53%);
+}
+.user-selection{
+  color: hsl(25, 97%, 53%);
+  padding: 5px;
+  background-color: hsl(216deg 11.11% 18.34%);
+  border-radius: 10px;
 }
