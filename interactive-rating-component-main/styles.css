@@ -2,11 +2,7 @@ body {
   font-size: 15px;
   color: hsl(217, 12%, 63%);
   font-family: "Hanken Grotesk", sans-serif;
-  background: linear-gradient(
-    180deg,
-    hsl(203, 19%, 8%) 0%,
-    hsl(220, 25%, 14%) 100%
-  );
+  background: hsl(216, 12%, 8%);
 }
 
 section {
@@ -20,37 +16,38 @@ section {
   flex-direction: column;
   padding: 40px;
   width: 23%;
-  height: 400px;
+  height: 350px;
   border-radius: 30px;
-  background: hsl(213, 19%, 18%);
   background: linear-gradient(
-    180deg,
-    hsl(203, 19%, 8%) 0%,
-    hsl(220, 25%, 14%) 100%
-  );
-}
+    to top,
+   hsl(210, 29%, 12%),
+   hsl(210, 22%, 16%)
 
-.icon {
-  width: 30px;
-  background-color: linear-gradient(
-    90deg,
-    hsl(203, 19%, 8%) 0%,
-    hsl(220, 25%, 14%) 100%
   );
 }
-.rating-value {
-  border: solid white;
+circle {
   display: flex;
   justify-content: center;
   border-radius: 50%;
   align-items: center;
   width: 50px;
   height: 50px;
-  background: linear-gradient(
-    180deg,
-    hsl(203, 19%, 8%) 0%,
-    hsl(220, 25%, 14%) 100%
-  );
+  background:hsl(204, 20%, 20%);
+}
+
+.icon {
+  width: 25px;
+  background:hsl(204, 20%, 20%);
+}
+.rating-value {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-weight: 700;
+  background: hsl(204, 20%, 20%);
 }
 .image {
   margin: 0 auto;
@@ -58,6 +55,7 @@ section {
 .title {
   font-size: 25px;
   color: white;
+  font-weight: 700;
 }
 
 .details {
@@ -84,7 +82,6 @@ li {
 .thank-you-card {
   text-align: center;
   visibility: hidden;
-  /* display: none; */
 }
 button {
   color: white;
@@ -93,6 +90,9 @@ button {
   border-radius: 30px;
   padding: 20px;
   width: 100%;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
 }
 button:hover {
   background-color: white;
@@ -100,11 +100,17 @@ button:hover {
   cursor: pointer;
 }
 
+/* RESPONSIVENESS */
+@media (max-width: 875px) {
+  section {
+    width: 40vw;
+  }
+}
+
 @media (max-width: 600px) {
   body {
     margin: 0;
     padding: 0;
-    background-color: hsl(216, 12%, 54%);
   }
   section {
     width: 70vw;
@@ -115,6 +121,8 @@ button:hover {
   }
 }
 
+
+/* USER INTERACTIONS */
 .hide {
   display: none;
 }

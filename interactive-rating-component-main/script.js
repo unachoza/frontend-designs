@@ -7,6 +7,9 @@ let selectedValue = null
 
 ratingsContainer.addEventListener('click', (e) => {
     if (e.target.className != 'rating-value') return;
+    if (selectedValue != null) {
+        values.forEach((value) => value.classList.remove('active'))
+    }
     e.target.classList.add('active')
     selectedValue = e.target.innerHTML
 })
