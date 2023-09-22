@@ -6,7 +6,7 @@
 }
 
 html {
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif, Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -19,23 +19,6 @@ body {
   box-shadow: 0 3px 6px hsl(252, 100%, 90%);
 }
 
-@media (max-width: 600px) {
-  body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  #result, #summary  {
-    width: 100%;
-  }
-  .title{
-    margin-top: 30px;
-  }
-}
-
 .section {
   width: 50%;
   position: relative;
@@ -44,7 +27,7 @@ body {
 }
 
 #result {
-  background-color: hsl(252, 100%, 67%);
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   color: hsl(241, 100%, 89%);
   border-radius: 30px;
 }
@@ -63,105 +46,124 @@ body {
     180deg,
     hsla(256, 72%, 46%, 1) 0%,
     hsla(241, 72%, 46%, 0) 100%
-  );
-  font-size: 20px;
-}
-
-.title {
-  font-size: 25px;
-  margin: 20px 15px;
-}
-div .content {
-  margin: 20px;
-  color: white;
-  font-size: 40px;
-}
-
-.note {
-  font-size: 20px;
-  margin: 20px;
-}
-
-#summary {
-  background-color: #ffffff;
-  border-radius: 0 30px 30px 0px;
-  color: hsl(224, 30%, 27%);
-}
-.summary-title {
-  display: flex;
-  font-size: 25px;
-  margin: 20px 15px;
-}
-
-ul {
-  padding: 0px;
-}
-
-.status {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 15px;
-}
-
-.status:nth-child(1) {
-  color: hsl(0, 100%, 67%);
-  background-color: hsla(0, 100%, 67%, 0.1);
-}
-
-.status:nth-child(2) {
-  color: hsl(39, 100%, 56%);
-  background-color: hsl(39, 100%, 56%, 0.1);
-}
-
-.status:nth-child(3) {
-  color: hsl(166, 100%, 37%);
-  background-color: hsl(166, 100%, 37%, 0.1);
-}
-.status:nth-child(4) {
-  color: hsl(234, 85%, 45%);
-  background-color: hsl(234, 85%, 45%, 0.1);
-}
-
-button {
-  background-color: hsl(224, 30%, 27%);
-  color: white;
-  border-radius: 30px;
-  width: 100%;
-  padding: 15px 10px;
-  font-size: 20px;
-  border: none;
-  margin: 15px 0px 0px 10px;
-}
-
-button:hover {
-  cursor: pointer;
-  background: linear-gradient(180deg, #3d31ee 0%, #2f2ce9 100%);
-}
-
-.status {
-  display: flex;
-  text-align: center;
-  width: 100%;
-}
-
-.icon {
- margin-right: 10px;
-}
-
-.score {
-  display: flex;
-  flex-grow: .9;
-  justify-content: flex-end;
-  color: black;
-}
-.total-score {
-  display: flex;
-  justify-content: flex-start;
-  color: grey;
-}
+    );
+    font-size: 20px;
+  }
+  
+  .title {
+    font-size: 25px;
+    margin: 20px 15px;
+  }
+  div .content {
+    margin: 20px;
+    color: white;
+    font-size: 40px;
+  }
+  
+  .note {
+    font-size: 20px;
+    margin: 20px;
+  }
+  
+  #summary {
+    background-color: #ffffff;
+    border-radius: 0 30px 30px 0px;
+    color: hsl(224, 30%, 27%);
+  }
+  .summary-title {
+    display: flex;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px 15px;
+  }
+  
+  ul {
+    padding: 0px;
+  }
+  
+  .status {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px;
+  }
+  
+  .status:nth-child(1) {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.1);
+  }
+  
+  .status:nth-child(2) {
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 56%, 0.1);
+  }
+  
+  .status:nth-child(3) {
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%, 0.1);
+  }
+  .status:nth-child(4) {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%, 0.1);
+  }
+  
+  button {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 20px;
+    border: none;
+    margin: 15px 0px 0px 10px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, #3d31ee 0%, #2f2ce9 100%);
+  }
+  
+  .status {
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .score {
+    display: flex;
+    flex-grow: .9;
+    justify-content: flex-end;
+    color: black;
+  }
+  .total-score {
+    display: flex;
+    justify-content: flex-start;
+    color: grey;
+  }
+  
+  /* RESPONSIVENESS */
+  @media (max-width: 600px) {
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    #result, #summary  {
+      width: 100%;
+    }
+    .title{
+      margin-top: 30px;
+    }
+  }
