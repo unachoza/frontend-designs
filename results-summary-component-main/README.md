@@ -42,11 +42,12 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - Flexbox
-- CSS Grid
 
 ### What I learned
 
 Started working with CSS Grid. This help solve/ make progress with some of the spacing issues I had in the summary section while just adding styles to span tags did not work. 
+
+UPDATED: implemented 'flex-grow', solved my need for grid 
 
 ### Continued development
 
@@ -63,4 +64,4 @@ Thanks for reviewing this code
 ## Author
 
 - Website - [Arianna Choza](https://arianna.dev)
-- Frontend Mentor - [@unachoza](https://www.frontendmentor.io/profile//unachoza)
+- Frontend Mentor - [@unachoza](https://www.frontendmentor.io/profile/unachoza)
