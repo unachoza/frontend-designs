@@ -62,7 +62,6 @@ body {
   bottom: -10%;
 }
 header {
-  /* background-color: var(--dark-purple); */
   color: white;
   border-radius: 0px 0 20% 20%;
 }
@@ -101,7 +100,8 @@ header {
   display: flex;
 }
 img.hero-image {
-  width: 40vw;
+  width: 50%;
+  height: 50%;
   margin: auto;
   max-height: 300px;
   max-width: 420px;
@@ -110,7 +110,6 @@ img.hero-image {
     font-size: 65px;
     line-height: 75px;
     margin: 1.5rem auto;
-    display: flex;
     text-align: center;
     justify-content: center;
     width: 50vw;
@@ -120,6 +119,7 @@ section.heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 40vh;
 }
 button {
   background-color: var(--eucaplyptus);
