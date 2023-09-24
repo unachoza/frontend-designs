@@ -286,10 +286,6 @@ div.button {
     display: block;
     margin-top: 0;
     height: auto;
-    /* flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center; */
   }
   div.test-container {
     margin-top: -50px;
