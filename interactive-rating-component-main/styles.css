@@ -25,6 +25,7 @@ section {
 
   );
 }
+
 circle {
   display: flex;
   justify-content: center;
@@ -39,6 +40,7 @@ circle {
   width: 25px;
   background:hsl(204, 20%, 20%);
 }
+
 .rating-value {
   display: flex;
   justify-content: center;
@@ -49,9 +51,11 @@ circle {
   font-weight: 700;
   background: hsl(204, 20%, 20%);
 }
+
 .image {
   margin: 0 auto;
 }
+
 .title {
   font-size: 25px;
   color: white;
@@ -67,22 +71,28 @@ circle {
   width: 100%;
   justify-content: space-around;
 }
+
 li {
   margin: 0px 15px;
 }
+
 .rating-value:hover {
   color: white;
   background: grey;
   cursor: pointer;
+  transition: all ease-in .3s;
 }
+
 .rating-value:active {
   color: white;
   background: hsl(25, 97%, 53%);
 }
+
 .thank-you-card {
   text-align: center;
   visibility: hidden;
 }
+
 button {
   color: white;
   background-color: hsl(25, 97%, 53%);
@@ -94,10 +104,12 @@ button {
   letter-spacing: .2rem;
   text-transform: uppercase;
 }
+
 button:hover {
   background-color: white;
   color: hsl(25, 97%, 53%);
   cursor: pointer;
+  transition: all ease-in .3s;
 }
 
 /* RESPONSIVENESS */
@@ -112,6 +124,7 @@ button:hover {
     margin: 0;
     padding: 0;
   }
+
   section {
     width: 70vw;
     position: absolute;
@@ -126,13 +139,16 @@ button:hover {
 .hide {
   display: none;
 }
+
 .show {
   visibility: visible;
 }
+
 .active {
   color: white;
   background: hsl(25, 97%, 53%);
 }
+
 .user-selection{
   color: hsl(25, 97%, 53%);
   padding: 5px;
